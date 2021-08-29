@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="0" android:paddingLeft="12dp" android:paddingTop="16dp" android:paddingRight="12dp" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-2">
+	<com.google.android.material.textfield.TextInputLayout android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+		<com.google.android.material.textfield.TextInputEditText android:layout_width="-1" android:layout_height="-2" android:hint="Start date" android:inputType="0x14" android:imeOptions="0x10000000" />
+	</com.google.android.material.textfield.TextInputLayout>
+	<Space android:layout_width="8dp" android:layout_height="0dp" />
+	<com.google.android.material.textfield.TextInputLayout android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+		<com.google.android.material.textfield.TextInputEditText android:layout_width="-1" android:layout_height="-2" android:hint="End date" android:inputType="0x14" android:imeOptions="0x10000000" />
+	</com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

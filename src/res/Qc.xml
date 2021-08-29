@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="false" android:layout_width="-2" android:layout_height="-2">
+	<androidx.constraintlayout.widget.Guideline android:orientation="0" android:id="false" android:layout_width="-2" android:layout_height="-2" app:layout_constraintGuide_begin="16dp" />
+	<include android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="4dp" app:layout_constraintBottom_toTopOf="false" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="false" app:layout_constraintVertical_chainStyle="2" layout="res/30.xml" />
+	<include android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_marginTop="12dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="false" app:layout_constraintRight_toRightOf="false" app:layout_constraintTop_toBottomOf="false" app:layout_constraintVertical_chainStyle="2" layout="res/jH.xml" />
+	<com.google.android.material.timepicker.ClockFaceView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginStart="64dp" app:layout_constraintStart_toEndOf="false" app:layout_constraintTop_toTopOf="0" />
+</merge>

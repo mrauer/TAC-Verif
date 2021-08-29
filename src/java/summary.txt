@@ -1,0 +1,87 @@
+Summary for /storage/emulated/0/show-java/sources/com.ingroupe.verify.anticovid/jar-files/5.jar
+Decompiled with CFR 0.0
+
+
+com.github.mikephil.charting.renderer.BarChartRenderer
+----------------------------
+
+drawValues(android.graphics.Canvas )
+  Unable to fully structure code
+
+
+com.ingroupe.verify.anticovid.MainActivity
+----------------------------
+
+onBackPressed()
+  Unable to fully structure code
+onDestroy()
+  Unable to fully structure code
+
+
+com.ingroupe.verify.anticovid.common.FeatureFragment
+----------------------------
+
+onResume()
+  Unable to fully structure code
+popToTag(java.lang.String android.os.Bundle boolean )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Invalid stack depths @ lbl148 : RETURN : trying to set 1 previously set to 0
+
+
+com.ingroupe.verify.anticovid.synchronization.elements.Analytics$getEventFromFile$2
+----------------------------
+
+invoke()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Invalid stack depths @ lbl109 : ALOAD : trying to set 1 previously set to 0
+
+
+com.ingroupe.verify.anticovid.synchronization.elements.Analytics$writeStringToFile$1
+----------------------------
+
+invoke()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Invalid stack depths @ lbl99 : ILOAD : trying to set 1 previously set to 0
+
+
+org.bouncycastle.asn1.ASN1ObjectIdentifier
+----------------------------
+
+doOutput(java.io.ByteArrayOutputStream )
+  Unable to fully structure code
+
+
+org.bouncycastle.asn1.x9.X9Curve
+----------------------------
+
+add(org.bouncycastle.math.ec.ECPoint )
+  Unable to fully structure code
+twice()
+  Unable to fully structure code
+
+
+org.bouncycastle.pqc.crypto.lms.HSSPrivateKeyParameters
+----------------------------
+
+getInstance(java.lang.Object )
+  Loose catch block
+
+
+org.bouncycastle.pqc.crypto.lms.HSSPublicKeyParameters
+----------------------------
+
+getInstance(java.lang.Object )
+  Loose catch block
+
+
+org.bouncycastle.pqc.crypto.lms.LMSPrivateKeyParameters
+----------------------------
+
+getInstance(java.lang.Object )
+  Loose catch block
+calcT(int )
+  Loose catch block
+
+
+org.bouncycastle.pqc.crypto.lms.LMSPublicKeyParameters
+----------------------------
+
+getInstance(java.lang.Object )
+  Loose catch block

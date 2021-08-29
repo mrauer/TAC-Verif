@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="-1" android:layout_height="-1">
+	<androidx.constraintlayout.widget.ConstraintLayout android:id="false" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="false" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" />
+	<androidx.constraintlayout.widget.ConstraintLayout android:id="false" android:background="ffa50" android:visibility="2" android:layout_width="-1" android:layout_height="-2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="{4:0}" app:layout_constraintStart_toStartOf="0">
+		<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="line 1" app:layout_constraintBottom_toTopOf="false" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="{4:1056964608}" style="resourceId:0x7f1202e8" />
+		<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="8dp" android:text="line 2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" style="resourceId:0x7f1202e8" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

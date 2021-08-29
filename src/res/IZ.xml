@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="-1" android:layout_height="-1">
+	<ImageView android:id="false" android:clickable="false" android:layout_width="-2" android:layout_height="0dp" android:scaleType="6" android:contentDescription="TAC Verif" app:layout_constraintBottom_toTopOf="false" app:layout_constraintDimensionRatio="508:1062" app:layout_constraintEnd_toEndOf="false" app:layout_constraintTop_toTopOf="false" app:layout_constraintVertical_bias="{4:1065353216}" app:srcCompat="res/9o.png" />
+	<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-1" />
+	<androidx.constraintlayout.widget.Guideline android:orientation="0" android:id="false" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="{4:1056964608}" />
+</androidx.constraintlayout.widget.ConstraintLayout>

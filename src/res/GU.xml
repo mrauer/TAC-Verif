@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="-1" android:layout_height="-2">
+	<androidx.constraintlayout.widget.ConstraintLayout android:id="false" android:background="res/Go.xml" android:layout_width="0dp" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+		<TextView android:id="false" android:layout_width="0dp" android:layout_height="-2" android:textAlignment="4" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="resourceId:0x7f1202f2" />
+		<TextView android:id="false" android:layout_width="0dp" android:layout_height="-2" android:text="Click here for more information" android:textAlignment="4" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="false" style="resourceId:0x7f1202f3" />
+		<WebView android:id="false" android:background="res/Go.xml" android:visibility="2" android:layout_width="0dp" android:layout_height="-2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="false" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

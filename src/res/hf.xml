@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:checkableBehavior="2">
+		<item android:icon="res/QK.xml" android:id="false" android:title="Verification" />
+	</group>
+	<item android:title="Options">
+		<menu>
+			<item android:icon="res/kG.xml" android:id="false" android:title="Settings" />
+			<item android:icon="res/2w.xml" android:id="false" android:title="Information and confidentiality" />
+			<item android:icon="res/W7.xml" android:id="false" android:title="About" />
+			<item android:icon="res/fE.xml" android:id="false" android:title="Statistics" />
+		</menu>
+	</item>
+</menu>

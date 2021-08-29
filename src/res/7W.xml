@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android" android:ellipsize="3" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Chip text" style="resourceId:0x7f120286" />

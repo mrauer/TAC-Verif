@@ -1,0 +1,337 @@
+{
+  "organization": "",
+  "statics": [
+    {
+      "name": "signature",
+      "label": "Données de validité",
+      "order": 1
+    },
+    {
+      "name": "message",
+      "label": "Données du message 2D-Doc",
+      "order": 2
+    },
+    {
+      "name": "annexe",
+      "label": "Données annexes",
+      "order": 3
+    },
+    {
+      "name": "header",
+      "label": "Données d'entêtes 2D-Doc",
+      "order": 4
+    }
+  ],
+  "about": {
+    "url":"www.ingroupe.com",
+    "cgu": "https://cdn.ingroupe.com/image/upload/v1608654186/IN%20Verify%20CGU/tac-cgu-application-mobile-verify.pdf",
+    "privacyPolicy": "https://cdn.ingroupe.com/image/upload/tac-boqpocuqwwl9zywnhewl.pdf"
+  },
+  "contacts": [
+  ],
+  "types": [
+    {
+      "configID": 1,
+      "resourceType": "2D-DOC_B2",
+      "information": {
+        "validityValuesFormat": {
+          "Valide": "Check_global_1",
+          "Non valide": "Check_global_2"
+        }
+      },
+      "groups": [
+        {
+          "order": 1,
+          "label": "Anomalie",
+          "showGroupName": false,
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.blacklist",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "dynamic.duplicate",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "label": "Informations du 2D-DOC",
+          "fields": [
+            {
+              "order": 1,
+              "name": "static.message.F0",
+              "label": "LISTE DES PRENOMS",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "static.message.F1",
+              "label": "NOM DE FAMILLE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "static.message.F2",
+              "label": "DATE DE NAISSANCE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "configID": 1,
+      "resourceType": "2D-DOC_L1",
+      "information": {
+        "validityValuesFormat": {
+          "Valide": "Check_global_1",
+          "Non valide": "Check_global_2"
+        }
+      },
+      "groups": [
+        {
+          "order": 1,
+          "label": "Anomalie",
+          "showGroupName": false,
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.blacklist",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "dynamic.duplicate",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "label": "Informations du 2D-DOC",
+          "fields": [
+            {
+              "order": 1,
+              "name": "static.message.L1",
+              "label": "LISTE DES PRENOMS DU PATIENT",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "static.message.L0",
+              "label": "NOM DE FAMILLE DU PATIENT",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "static.message.L2",
+              "label": "DATE DE NAISSANCE DU PATIENT ",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "configID": 1,
+      "resourceType": "DCC_TEST",
+      "groups": [
+        {
+          "order": 1,
+          "label": "Anomalie",
+          "showGroupName": false,
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.anomaly",
+              "label": "MESSAGE",
+              "defaultFormat": "Warn_Text_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "dynamic.blacklist",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "dynamic.duplicate",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "label": "Informations du QR Code",
+          "fields": [
+            {
+              "order": 1,
+              "name": "static.givenName",
+              "label": "LISTE DES PRENOMS",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "static.familyName",
+              "label": "NOM DE FAMILLE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "static.dateOfBirth",
+              "label": "DATE DE NAISSANCE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "configID": 1,
+      "resourceType": "DCC_VACCINATION",
+      "groups": [
+        {
+          "order": 1,
+          "label": "Anomalie",
+          "showGroupName": false,
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.anomaly",
+              "label": "MESSAGE",
+              "defaultFormat": "Warn_Text_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "dynamic.blacklist",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "dynamic.duplicate",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "label": "Informations du QR Code",
+          "fields": [
+            {
+              "order": 1,
+              "name": "static.givenName",
+              "label": "LISTE DES PRENOMS",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "static.familyName",
+              "label": "NOM DE FAMILLE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "static.dateOfBirth",
+              "label": "DATE DE NAISSANCE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "configID": 1,
+      "resourceType": "DCC_RECOVERY",
+      "groups": [
+        {
+          "order": 1,
+          "label": "Anomalie",
+          "showGroupName": false,
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.anomaly",
+              "label": "MESSAGE",
+              "defaultFormat": "Warn_Text_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "dynamic.blacklist",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "dynamic.duplicate",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "label": "Informations du QR Code",
+          "fields": [
+            {
+              "order": 1,
+              "name": "static.givenName",
+              "label": "LISTE DES PRENOMS",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "static.familyName",
+              "label": "NOM DE FAMILLE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "static.dateOfBirth",
+              "label": "DATE DE NAISSANCE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

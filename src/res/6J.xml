@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<include layout="res/ew.xml" />
+	<FrameLayout android:id="false" android:layout_width="-1" android:layout_height="-1">
+		<androidx.recyclerview.widget.RecyclerView android:layout_gravity="0x1" android:id="false" android:scrollbars="0x0" android:layout_width="-2" android:layout_height="-1" />
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-2" android:layout_height="-1">
+			<include layout="res/Ex.xml" />
+			<include layout="res/_d.xml" />
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="-1" android:layout_height="128dp">
+	<LinearLayout android:layout_gravity="0x31" android:orientation="0" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="4dp" android:layout_width="-1" android:layout_height="128dp" android:paddingStart="4dp" android:paddingEnd="4dp" style="{2:2130903630}">
+		<com.google.android.material.button.MaterialButton android:gravity="0x11" android:layout_gravity="0x30" android:id="false" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:insetTop="0dp" android:insetBottom="0dp" android:contentDescription="resourceId:0x1040000" app:icon="res/eI.xml" app:rippleColor="res/color/mtrl_btn_ripple_color.xml" style="{2:2130903627}" />
+		<FrameLayout android:id="false" android:paddingLeft="12dp" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}" android:paddingStart="12dp">
+			<TextView android:gravity="0x800053" android:layout_gravity="0x800033" android:id="false" android:layout_width="-1" android:layout_height="-2" app:firstBaselineToTopHeight="68dp" style="{2:2130903632}" />
+			<TextView android:gravity="0x800053" android:layout_gravity="0x800033" android:id="false" android:paddingBottom="0dp" android:layout_width="-1" android:layout_height="-2" app:firstBaselineToTopHeight="104dp" app:lineHeight="32dp" style="{2:2130903631}" />
+		</FrameLayout>
+		<LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2">
+			<com.google.android.material.button.MaterialButton android:layout_gravity="0x800035" android:id="false" android:layout_width="-2" android:layout_height="48dp" android:text="Save" android:contentDescription="Save" style="{2:2130903628}" />
+			<include layout="res/4G.xml" />
+		</LinearLayout>
+	</LinearLayout>
+	<View android:layout_gravity="0x50" android:layout_width="-1" android:layout_height="1dp" style="{2:2130903629}" />
+</merge>

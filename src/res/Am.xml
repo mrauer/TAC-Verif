@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButtonToggleGroup xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="1" android:id="false" android:background="{2:2130903264}" android:visibility="2" android:layout_width="52dp" android:layout_height="96dp" android:contentDescription="Select AM or PM" android:layout_marginStart="12dp" app:checkedButton="false" app:layout_constraintStart_toEndOf="false" app:layout_constraintTop_toTopOf="0" app:selectionRequired="true" app:singleSelection="true">
+	<com.google.android.material.button.MaterialButton android:id="false" android:layout_width="-2" android:text="AM" android:insetTop="8dp" app:shapeAppearanceOverlay="{2:2130903798}" style="{2:2130903622}" />
+	<com.google.android.material.button.MaterialButton android:id="false" android:layout_width="-2" android:text="PM" android:insetBottom="8dp" app:shapeAppearanceOverlay="{2:2130903798}" style="{2:2130903622}" />
+</com.google.android.material.button.MaterialButtonToggleGroup>

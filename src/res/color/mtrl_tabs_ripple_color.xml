@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_selected="true" android:state_pressed="true" android:color="{2:2130903258}" android:alpha="{4:1034147594}" />
+	<item android:state_focused="true" android:state_selected="true" android:color="{2:2130903258}" android:alpha="{4:1042536202}" android:state_hovered="true" />
+	<item android:state_focused="true" android:state_selected="true" android:color="{2:2130903258}" android:alpha="{4:1039516303}" />
+	<item android:state_selected="true" android:color="{2:2130903258}" android:alpha="{4:1025758986}" android:state_hovered="true" />
+	<item android:state_selected="true" android:color="{2:2130903258}" android:alpha="{4:0}" />
+	<item android:state_pressed="true" android:color="{2:2130903257}" android:alpha="{4:1034147594}" />
+	<item android:state_focused="true" android:color="{2:2130903257}" android:alpha="{4:1042536202}" android:state_hovered="true" />
+	<item android:state_focused="true" android:color="{2:2130903257}" android:alpha="{4:1039516303}" />
+	<item android:color="{2:2130903257}" android:alpha="{4:1025758986}" android:state_hovered="true" />
+	<item android:color="{2:2130903257}" android:alpha="{4:0}" />
+</selector>

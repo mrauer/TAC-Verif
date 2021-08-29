@@ -1,0 +1,768 @@
+{
+  "organization": "",
+  "statics": [
+    {
+      "name": "signature",
+      "label": "Données de validité",
+      "order": 1
+    },
+    {
+      "name": "message",
+      "label": "Données du message 2D-Doc",
+      "order": 2
+    },
+    {
+      "name": "annexe",
+      "label": "Données annexes",
+      "order": 3
+    },
+    {
+      "name": "header",
+      "label": "Données d'entêtes 2D-Doc",
+      "order": 4
+    }
+  ],
+  "about": {
+    "url":"www.ingroupe.com",
+    "cgu": "https://cdn.ingroupe.com/image/upload/v1608654186/IN%20Verify%20CGU/tac-cgu-application-mobile-verify.pdf",
+    "privacyPolicy": "https://cdn.ingroupe.com/image/upload/tac-boqpocuqwwl9zywnhewl.pdf"
+  },
+  "contacts": [
+  ],
+  "types": [
+    {
+      "configID": 1,
+      "resourceType": "2D-DOC_B2",
+      "information": {
+        "validityValuesFormat": {
+          "Valide": "Check_global_1",
+          "Non valide": "Check_global_2"
+        }
+      },
+      "groups": [
+        {
+          "order": 1,
+          "label": "Anomalie",
+          "showGroupName": false,
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.blacklist",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "dynamic.duplicate",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "label": "Données de validité",
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.samplingDuration",
+              "label": "DUREE DEPUIS LE PRELEVEMENT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "label": "Informations du 2D-DOC",
+          "fields": [
+            {
+              "order": 1,
+              "name": "static.message.F6",
+              "label": "DATE ET HEURE DU PRELEVEMENT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "static.message.F0",
+              "label": "LISTE DES PRENOMS",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "static.message.F1",
+              "label": "NOM DE FAMILLE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 4,
+              "name": "static.message.F2",
+              "label": "DATE DE NAISSANCE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 5,
+              "name": "dynamic.F5",
+              "label": "RESULTAT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 6,
+              "name": "dynamic.F4",
+              "label": "CODE ANALYSE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 7,
+              "name": "static.message.F3",
+              "label": "GENRE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+
+
+            {
+              "order": 8,
+              "name": "static.signature.status",
+              "label": "SIGNATURE DU 2D-DOC",
+              "defaultFormat": "Hidden_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 9,
+              "name": "static.header.00",
+              "label": "TYPE DE DOCUMENT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 10,
+              "name": "static.header.03",
+              "label": "IDENTIFIANT DE L'AUTORITE DE CERTIFICATION",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 11,
+              "name": "static.header.04",
+              "label": "IDENTIFIANT DU CERTIFICAT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 12,
+              "name": "static.header.05",
+              "label": "DATE D'EMISSION DU DOCUMENT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 13,
+              "name": "static.header.06",
+              "label": "DATE DE CREATION DE LA SIGNATURE 2D-DOC",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 14,
+              "name": "static.header.09",
+              "label": "PAYS EMETTEUR DU DOCUMENT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "configID": 1,
+      "resourceType": "2D-DOC_L1",
+      "information": {
+        "validityValuesFormat": {
+          "Valide": "Check_global_1",
+          "Non valide": "Check_global_2"
+        }
+      },
+      "groups": [
+        {
+          "order": 1,
+          "label": "Anomalie",
+          "showGroupName": false,
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.blacklist",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "dynamic.duplicate",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "label": "Données de validité",
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.vaccinationDuration",
+              "label": "DUREE DEPUIS LA DERNIERE INJECTION",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "label": "Informations du 2D-DOC",
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.LA",
+              "label": "ETAT DU CYCLE DE VACCINATION",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "static.message.L1",
+              "label": "LISTE DES PRENOMS DU PATIENT",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "static.message.L0",
+              "label": "NOM DE FAMILLE DU PATIENT",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 4,
+              "name": "static.message.L2",
+              "label": "DATE DE NAISSANCE DU PATIENT ",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 5,
+              "name": "static.message.L3",
+              "label": "NOM DE LA MALADIE COUVERTE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 6,
+              "name": "static.message.L4",
+              "label": "AGENT PROPHYLACTIQUE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 7,
+              "name": "static.message.L5",
+              "label": "NOM DU VACCIN",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 8,
+              "name": "static.message.L6",
+              "label": "FABRICANT DU VACCIN",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 9,
+              "name": "static.message.L7",
+              "label": "RANG DU DERNIER ETAT DE VACCINATION EFFECTUE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 10,
+              "name": "static.message.L8",
+              "label": "NOMBRE DE DOSES ATTENDUES POUR UN CYCLE COMPLET",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 11,
+              "name": "static.message.L9",
+              "label": "DATE DU DERNIER ETAT DU CYCLE DE VACCINATION",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 12,
+              "name": "static.signature.status",
+              "label": "SIGNATURE DU 2D-DOC",
+              "defaultFormat": "Hidden_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 13,
+              "name": "static.header.00",
+              "label": "TYPE DE DOCUMENT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 14,
+              "name": "static.header.05",
+              "label": "DATE D'EMISSION DU DOCUMENT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 15,
+              "name": "static.header.06",
+              "label": "DATE DE CREATION DE LA SIGNATURE 2D-DOC",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 16,
+              "name": "static.header.03",
+              "label": "IDENTIFIANT DE L'AUTORITE DE CERTIFICATION",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 17,
+              "name": "static.header.04",
+              "label": "IDENTIFIANT DU CERTIFICAT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 18,
+              "name": "static.header.09",
+              "label": "PAYS EMETTEUR DU DOCUMENT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "configID": 1,
+      "resourceType": "DCC_TEST",
+      "groups": [
+        {
+          "order": 1,
+          "label": "Anomalie",
+          "showGroupName": false,
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.anomaly",
+              "label": "MESSAGE",
+              "defaultFormat": "Warn_Text_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "dynamic.blacklist",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "dynamic.duplicate",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "label": "Données de validité",
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.samplingDuration",
+              "label": "DUREE DEPUIS LE PRELEVEMENT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "label": "Informations du QR Code",
+          "fields": [
+            {
+              "order": 1,
+              "name": "static.givenName",
+              "label": "LISTE DES PRENOMS",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "static.familyName",
+              "label": "NOM DE FAMILLE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "static.dateOfBirth",
+              "label": "DATE DE NAISSANCE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 4,
+              "name": "static.dateTimeOfCollection",
+              "label": "DATE ET HEURE DU PRELEVEMENT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 5,
+              "name": "dynamic.testResult",
+              "label": "RESULTAT DU TEST",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 6,
+              "name": "dynamic.testType",
+              "label": "TYPE DE TEST",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 7,
+              "name": "dynamic.disease",
+              "label": "NOM DE LA MALADIE COUVERTE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 8,
+              "name": "static.testName",
+              "label": "NOM DU TEST",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 9,
+              "name": "dynamic.testNameAndManufacturer",
+              "label": "FABRICANT DU TEST",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 10,
+              "name": "static.testingCentre",
+              "label": "CENTRE DE TEST",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 11,
+              "name": "dynamic.countryOfVaccination",
+              "label": "ETAT EMETTEUR",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 12,
+              "name": "static.certificateIssuer",
+              "label": "EMETTEUR DU CERTIFICAT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 13,
+              "name": "static.certificateIdentifier",
+              "label": "IDENTIFIANT DU CERTIFICAT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "configID": 1,
+      "resourceType": "DCC_VACCINATION",
+      "groups": [
+        {
+          "order": 1,
+          "label": "Anomalie",
+          "showGroupName": false,
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.anomaly",
+              "label": "MESSAGE",
+              "defaultFormat": "Warn_Text_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "dynamic.blacklist",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "dynamic.duplicate",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "label": "Données de validité",
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.vaccinationDuration",
+              "label": "DUREE DEPUIS LA DERNIERE INJECTION",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "label": "Informations du QR Code",
+          "fields": [
+            {
+              "order": 1,
+              "name": "static.givenName",
+              "label": "LISTE DES PRENOMS",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "static.familyName",
+              "label": "NOM DE FAMILLE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "static.dateOfBirth",
+              "label": "DATE DE NAISSANCE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 4,
+              "name": "static.dateOfVaccination",
+              "label": "DATE DE LA VACCINATION",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 5,
+              "name": "dynamic.currentDoseCount",
+              "label": "NOMBRE DANS UNE SERIE DE VACCINS / DOSES",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 6,
+              "name": "dynamic.medicinalProduct",
+              "label": "MEDICAMENT VACCINAL",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 7,
+              "name": "dynamic.disease",
+              "label": "NOM DE LA MALADIE COUVERTE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 8,
+              "name": "dynamic.vaccine",
+              "label": "AGENT PROPHYLACTIQUE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 9,
+              "name": "dynamic.manufacturer",
+              "label": "FABRICANT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 10,
+              "name": "dynamic.countryOfVaccination",
+              "label": "ETAT EMETTEUR",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 11,
+              "name": "static.certificateIssuer",
+              "label": "EMETTEUR DU CERTIFICAT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 12,
+              "name": "static.certificateIdentifier",
+              "label": "IDENTIFIANT DU CERTIFICAT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "configID": 1,
+      "resourceType": "DCC_RECOVERY",
+      "groups": [
+        {
+          "order": 1,
+          "label": "Anomalie",
+          "showGroupName": false,
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.anomaly",
+              "label": "MESSAGE",
+              "defaultFormat": "Warn_Text_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "dynamic.blacklist",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "dynamic.duplicate",
+              "label": "",
+              "defaultFormat": "Warn_Webview_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "label": "Données de validité",
+          "fields": [
+            {
+              "order": 1,
+              "name": "dynamic.samplingDuration",
+              "label": "DUREE DEPUIS LE PRELEVEMENT POSITIF",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "label": "Informations du QR Code",
+          "fields": [
+            {
+              "order": 1,
+              "name": "static.givenName",
+              "label": "LISTE DES PRENOMS",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 2,
+              "name": "static.familyName",
+              "label": "NOM DE FAMILLE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 3,
+              "name": "static.dateOfBirth",
+              "label": "DATE DE NAISSANCE",
+              "defaultFormat": "Icone_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 4,
+              "name": "static.dateOfFirstPositiveTest",
+              "label": "DATE DU PREMIER PRELEVEMENT POSITIF",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 5,
+              "name": "static.certificateValidFrom",
+              "label": "DEBUT DE VALIDITE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 6,
+              "name": "static.certificateValidUntil",
+              "label": "FIN DE VALIDITE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 7,
+              "name": "dynamic.disease",
+              "label": "NOM DE LA MALADIE COUVERTE",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 8,
+              "name": "dynamic.countryOfVaccination",
+              "label": "ETAT EMETTEUR",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 9,
+              "name": "static.certificateIssuer",
+              "label": "EMETTEUR DU CERTIFICAT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            },
+            {
+              "order": 10,
+              "name": "static.certificateIdentifier",
+              "label": "IDENTIFIANT DU CERTIFICAT",
+              "defaultFormat": "Format_1",
+              "valuesFormat": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+	<set android:ordering="1">
+		<objectAnimator android:interpolator="res/YF.xml" android:duration="166" android:valueFrom="{4:1073741824}" android:valueTo="{4:1099956224}" android:valueType="0" android:propertyName="strokeWidth" />
+		<objectAnimator android:interpolator="res/r0.xml" android:duration="16" android:valueFrom="{4:1099956224}" android:valueTo="{4:1073741824}" android:valueType="0" android:propertyName="strokeWidth" />
+		<objectAnimator android:interpolator="res/r0.xml" android:duration="316" android:valueFrom="{4:1073741824}" android:valueTo="{4:1073741824}" android:valueType="0" android:propertyName="strokeWidth" />
+	</set>
+</set>

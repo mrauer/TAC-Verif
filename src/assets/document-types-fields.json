@@ -1,0 +1,239 @@
+[
+  {
+    "name": "01",
+    "label": "Identifiant unique du document",
+    "regex": "^[A-Z0-9]{0,}$",
+    "min": 0,
+    "max": 65535
+  },
+  {
+    "name": "02",
+    "label": "Catégorie de document",
+    "regex": "^[A-Z0-9\\s]{0,}$",
+    "min": 0,
+    "max": 65535
+  },
+  {
+    "name": "03",
+    "label": "Sous-catégorie de document",
+    "regex": "^[A-Z0-9\\s]{0,}$",
+    "min": 0,
+    "max": 65535
+  },
+  {
+    "name": "04",
+    "label": "Application de composition",
+    "regex": "^[A-Z0-9\\s]{0,}$",
+    "min": 0,
+    "max": 65535
+  },
+  {
+    "name": "05",
+    "label": "Version de l’application de composition",
+    "regex": "^[A-Z0-9\\s]{0,}$",
+    "min": 0,
+    "max": 65535
+  },
+  {
+    "name": "06",
+    "label": "Date de l’association entre le document et le code 2D-Doc",
+    "regex": "^[A-Z0-9]{4}$",
+    "min": 4,
+    "max": 4,
+    "operations": [
+      "CONVERT_HEX_TO_DATE"
+    ]
+  },
+  {
+    "name": "07",
+    "label": "Heure de l’association entre le document et le code 2D-Doc",
+    "regex": "^[0-9]{6}$",
+    "min": 6,
+    "max": 6
+  },
+  {
+    "name": "08",
+    "label": "Date d’expiration du document",
+    "regex": "^[A-Z0-9]{4}$",
+    "min": 4,
+    "max": 4,
+    "operations": [
+      "CONVERT_HEX_TO_DATE"
+    ]
+  },
+  {
+    "name": "09",
+    "label": "Nombre de pages du document",
+    "regex": "^[0-9]{4}$",
+    "min": 4,
+    "max": 4
+  },
+  {
+    "name": "0A",
+    "label": "Editeur du 2D-Doc",
+    "regex": "^[0-9]{9}$",
+    "min": 9,
+    "max": 9
+  },
+  {
+    "name": "0B",
+    "label": "Intégrateur du 2D-Doc",
+    "regex": "^[0-9]{9}$",
+    "min": 9,
+    "max": 9
+  },
+  {
+    "name": "0C",
+    "label": "URL du document",
+    "regex": "^.{0,}$",
+    "min": 0,
+    "max": 65535,
+    "operations": [
+      "DECODE_BASE32"
+    ]
+  },
+  {
+    "name": "F0",
+    "label": "Liste des prénoms",
+    "regex": "^[A-Z\\s\\/]{0,60}$",
+    "min": 0,
+    "max": 60,
+    "operations": [
+      "REMOVE_SLASH"
+    ]
+  },
+  {
+    "name": "F1",
+    "label": "Nom de famille",
+    "regex": "^[A-Z\\s]{0,38}$",
+    "min": 0,
+    "max": 38
+  },
+  {
+    "name": "F2",
+    "label": "Date de naissance",
+    "regex": "^[0-9]{8}$",
+    "min": 8,
+    "max": 8,
+    "operations": [
+      "CONVERT_STRING_TO_DATE"
+    ]
+  },
+  {
+    "name": "F3",
+    "label": "Genre",
+    "regex": "^[M|F|U|X]$",
+    "min": 1,
+    "max": 1
+  },
+  {
+    "name": "F4",
+    "label": "Code analyse",
+    "regex": "^[A-Z0-9]{3,7}$",
+    "min": 3,
+    "max": 7
+  },
+  {
+    "name": "F5",
+    "label": "Résultat de l'analyse",
+    "regex": "^[P|N|I|X]$",
+    "min": 1,
+    "max": 1
+  },
+  {
+    "name": "F6",
+    "label": "Date et heure du prélèvement",
+    "regex": "^[0-9]{12}$",
+    "min": 12,
+    "max": 12,
+    "operations": [
+      "CONVERT_STRING_TO_DATE"
+    ]
+  },
+  {
+    "name": "L0",
+    "label": "Nom de famille du patient",
+    "regex": "^[A-Z\\s\\/\\.\\-]{0,80}$",
+    "min": 0,
+    "max": 80
+  },
+  {
+    "name": "L1",
+    "label": "Liste des prénoms du patient",
+    "regex": "^[A-Z\\s\\/\\.\\-]{0,80}$",
+    "min": 0,
+    "max": 80,
+    "operations": [
+      "REMOVE_SLASH"
+    ]
+  },
+  {
+    "name": "L2",
+    "label": "Date de naissance du patient",
+    "regex": "^[0-9]{8}$",
+    "min": 8,
+    "max": 8,
+    "operations": [
+      "CONVERT_STRING_TO_DATE"
+    ]
+  },
+  {
+    "name": "L3",
+    "label": "Nom de la maladie couverte",
+    "regex": "^[A-Z0-9\\s\\/\\.\\-]{0,30}$",
+    "min": 0,
+    "max": 30
+  },
+  {
+    "name": "L4",
+    "label": "Agent prophylactique",
+    "regex": "^[A-Z0-9\\s\\/\\.\\-]{5,15}$",
+    "min": 5,
+    "max": 15
+  },
+  {
+    "name": "L5",
+    "label": "Nom du vaccin",
+    "regex": "^[A-Z0-9\\s\\/\\.\\-]{5,30}$",
+    "min": 5,
+    "max": 30
+  },
+  {
+    "name": "L6",
+    "label": "Fabriquant du vaccin",
+    "regex": "^[A-Z0-9\\s\\/\\.\\-]{5,30}$",
+    "min": 5,
+    "max": 30
+  },
+  {
+    "name": "L7",
+    "label": "Rang du dernier état de vaccination effectué",
+    "regex": "^[0-9]{1}$",
+    "min": 1,
+    "max": 1
+  },
+  {
+    "name": "L8",
+    "label": "Nombre de doses attendues pour un cycle complet",
+    "regex": "^[0-9]{1}$",
+    "min": 1,
+    "max": 1
+  },
+  {
+    "name": "L9",
+    "label": "Date du dernier état du cycle de vaccination",
+    "regex": "^[0-9]{8}$",
+    "min": 8,
+    "max": 8,
+    "operations": [
+      "CONVERT_STRING_TO_DATE"
+    ]
+  },
+  {
+    "name": "LA",
+    "label": "Etat du cycle de vaccination",
+    "regex": "^[A-Z]{2}$",
+    "min": 2,
+    "max": 2
+  }
+]

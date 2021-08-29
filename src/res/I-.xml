@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="false" android:layout_width="-2" android:layout_height="-2">
+	<include android:id="false" layout="res/30.xml" />
+	<include android:id="false" layout="res/Am.xml" />
+	<com.google.android.material.timepicker.ClockFaceView android:layout_gravity="0x11" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="36dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="false" />
+</merge>

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "01",
+    "label": "Marqueur d’identification du 2D-Doc",
+    "regex": "DC",
+    "begin": 0,
+    "end": 2
+  },
+  {
+    "name": "02",
+    "label": "Version de la spécification",
+    "regex": "^[0-9]{2}$",
+    "begin": 2,
+    "end": 4
+  },
+  {
+    "name": "03",
+    "label": "Identifiant de l’Autorité de Certification",
+    "regex": "^[A-Z0-9]{4}$",
+    "begin": 4,
+    "end": 8
+  },
+  {
+    "name": "04",
+    "label": "Identifiant du certificat",
+    "regex": "^[A-Z0-9]{4}$",
+    "begin": 8,
+    "end": 12
+  },
+  {
+    "name": "05",
+    "label": "Date d’émission du document",
+    "regex": "^[A-F0-9]{4}$",
+    "begin": 12,
+    "end": 16,
+    "operations": [
+      "CONVERT_HEX_TO_DATE"
+    ]
+  },
+  {
+    "name": "06",
+    "label": "Date de création de la signature",
+    "regex": "^[A-F0-9]{4}$",
+    "begin": 16,
+    "end": 20,
+    "operations": [
+      "CONVERT_HEX_TO_DATE"
+    ]
+  },
+  {
+    "name": "07",
+    "label": "Code d’identification du type de document",
+    "regex": "^[A-Z0-9]{2}$",
+    "begin": 20,
+    "end": 22
+  },
+  {
+    "name": "08",
+    "label": "Identifiant du périmètre",
+    "regex": "^[A-Z0-9]{2}$",
+    "begin": 22,
+    "end": 24
+  },
+  {
+    "name": "09",
+    "label": "Pays émetteur du document",
+    "regex": "^[A-Z0-9]{2}$",
+    "begin": 24,
+    "end": 26,
+    "operations": [
+      "GET_COUNTRY"
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="59" android:versionName="1.8.2" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.ingroupe.verify.anticovid" platformBuildVersionCode="30" platformBuildVersionName="11">
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="30" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+	<uses-feature android:glEsVersion="0x20000" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+	<application android:theme="resourceId:0x7f120009" android:label="TAC Verif" android:icon="res/NK.png" android:name="com.ingroupe.verify.anticovid.App" android:allowBackup="false" android:hardwareAccelerated="true" android:supportsRtl="true" android:extractNativeLibs="false" android:roundIcon="res/Om.png" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity android:theme="resourceId:0x7f12000c" android:label="TAC Verif" android:name="com.ingroupe.verify.anticovid.MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<receiver android:name="com.ingroupe.verify.anticovid.observer.StartReceiver" android:enabled="true" android:exported="false">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+				<action android:name="android.intent.action.QUICKBOOT_POWERON" />
+				<action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="com.ingroupe.verify.anticovid.observer.DailyReceiver" />
+		<provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.ingroupe.verify.anticovid.provider" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="res/jB.xml" />
+		</provider>
+		<provider android:name="com.scandit.datacapture.core.internal.sdk.init.CoreLibraryLoaderContentProvider" android:exported="false" android:authorities="com.ingroupe.verify.anticovid.corelibraryloadercontentprovider" />
+		<provider android:name="com.scandit.datacapture.barcode.internal.sdk.init.BarcodeLibraryLoaderContentProvider" android:exported="false" android:authorities="com.ingroupe.verify.anticovid.barcodelibraryloadercontentprovider" />
+		<provider android:name="androidx.work.impl.WorkManagerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.ingroupe.verify.anticovid.workmanager-init" android:directBootAware="false" />
+		<service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="false" android:exported="false" android:directBootAware="false" />
+		<service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="true" android:directBootAware="false" />
+		<service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="true" android:exported="false" android:directBootAware="false" />
+		<receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false" />
+		<receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+			<intent-filter>
+				<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+				<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+			<intent-filter>
+				<action android:name="android.intent.action.BATTERY_OKAY" />
+				<action android:name="android.intent.action.BATTERY_LOW" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+			<intent-filter>
+				<action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+				<action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.TIME_SET" />
+				<action android:name="android.intent.action.TIMEZONE_CHANGED" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+			<intent-filter>
+				<action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+			<intent-filter>
+				<action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+			</intent-filter>
+		</receiver>
+		<provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.ingroupe.verify.anticovid.lifecycle-process" />
+		<service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true" />
+	</application>
+</manifest>

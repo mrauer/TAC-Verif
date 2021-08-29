@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="-1" android:layout_height="-1">
+	<com.google.android.material.appbar.AppBarLayout android:theme="resourceId:0x7f12000a" android:id="false" android:layout_width="-1" android:layout_height="-2" app:layout_constraintTop_toTopOf="0">
+		<androidx.appcompat.widget.Toolbar android:id="false" android:layout_width="-1" android:layout_height="{2:2130903046}" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<include android:id="false" android:layout_width="-1" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="false" layout="res/ho.xml" />
+</androidx.constraintlayout.widget.ConstraintLayout>
